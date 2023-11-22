@@ -1,0 +1,65 @@
+
+
+
+.from{
+    
+    width: 600px; 
+    height: 350px; 
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px; 
+    margin-left: -300px; /* نصف العرض */
+    box-sizing: border-box; /* ليشمل الهوامش والحدود ضمن الأبعاد المحددة */
+    
+}
+
+.inptuuser{
+    display: flex;
+    margin-top: 40px;
+    text-align: center;
+   margin-left: 200px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   padding: 10px 20px;
+
+}
+
+
+.success-message{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+    align-items: center;
+}
+
+.button1{
+   
+        
+    display:flow-root;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 19vh;
+    /* background-image: url("/assets/img/s-l400.jpg"); */
+    background-position: center;
+    background-size: cover;
+     transition: transform 0.5s;
+    
+}
+
+.button1:hover{
+    transform: translateY(-10px);
+}
+
+.signup{
+    margin-left: 760px;
+    margin-top: 120px;
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+  
+   }
+

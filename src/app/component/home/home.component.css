@@ -1,0 +1,190 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Welcome{
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.col1{
+    
+    margin-left: 200px;
+    
+}
+.img{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url("/assets/media/pexels-mike-bird-114820.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.row{
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+
+
+.col{
+    margin-left: 10%;
+    
+   
+}
+
+h1{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 300%;
+    
+}
+
+.p{
+    
+    color: aliceblue;
+    font-family: cursive;
+    font-size: large;
+    font-size: 120%;
+    margin-left: 2%;
+}
+
+
+
+.card{
+    
+   
+    width: 200px;
+    height: 230px;
+    display:flow-root;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 80px;
+    /* background-image: url("/assets/img/s-l400.jpg"); */
+    background-position: center;
+    background-size: cover;
+     transition: transform 0.5s;
+}
+.card1{
+    
+    background-image: url("/assets/img/ouud1.PNG");
+}
+
+.card2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));
+
+    background-image: url("/assets/img/Hidersine-Vivente-Finetune-Violin-Outfit-Full-Size-300x300.jpg");
+}
+.card3{
+    background-image: url("/assets/img/homepageStill.jpg");
+}
+
+
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+.button{
+    
+       margin-top: -280px;
+       margin-left: 250px;
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button::before{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7));
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    animation: border-top-right 3s infinite alternate;
+}
+
+@keyframes border-top-right{
+    0% {width: 0px; height: 0px;}
+    25% {width: 200px; height: 0px;}
+    50% {width: 200px; height: 48px;}
+    100% {width: 200px; height: 48px;}
+}
+
+.button:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    animation: border-top-right 3s infinite alternate;
+}
+
+@keyframes border-top-left{
+    0% {width: 0px; height: 0;}
+    50% {width: 0px; height: 0;}
+    75% {width: 200px; height: 0;}
+    100% {width: 200px; height: 48;}
+}
+
+
+
+@keyframes border-top-left{
+    0% {width: 0px; height: 0; opacity: 0;}
+    50% {width: 0px; height: 0; opacity: 0;}
+    50.1% {width: 0px; height: 0; opacity: 1;}
+    75% {width: 200px; height: 0; opacity: 1;}
+    100% {width: 200px; height: 48; opacity: 1;}
+}
+
+.stylemusic{
+    color: white;
+}
+
+.ToDisplay{
+
+    display:flow-root;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+    background-position: center;
+    background-size: cover;
+     transition: transform 0.5s;
+}
+
+
+.ToDisplay:hover{
+    transform: translateY(-10px);
+}
+
+
+
+

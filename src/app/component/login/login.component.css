@@ -1,0 +1,90 @@
+
+
+.login{
+ margin-left: 780px;
+ margin-top: 110px;
+ font-size: 55px;
+ color: rgb(0, 0, 0);
+}
+.from{
+    /* width: 600px; 
+    height: 300px;  */
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px; 
+    margin-left: -300px; /* نصف العرض */
+    box-sizing: border-box; /* ليشمل الهوامش والحدود ضمن الأبعاد المحددة */
+
+
+/*  
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px); */
+}
+
+.input-box label{
+    
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%
+    );
+}
+
+.inptuuser{
+    margin-top: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+   margin-left: 200px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   padding: 10px 20px;
+
+}
+
+.button1{
+    margin-top: 20px;
+        
+    display:flow-root;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 19vh;
+    /* background-image: url("/assets/img/s-l400.jpg"); */
+    background-position: center;
+    background-size: cover;
+     transition: transform 0.5s;
+    
+}
+
+.button1:hover{
+    transform: translateY(-10px);
+}
+
+
+.Doyou{
+    color: white;
+}
+
+.error-msg{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   margin-top: 40px;
+    font-size: 40px;
+}
+
+.Register{
+    color: rgb(0, 0, 0);
+    margin-top: 170px;
+    margin-left: 900px;
+    font-size: 22px;
+}
+
+a {
+    color: #000000; 
+    text-decoration: none;
+  }

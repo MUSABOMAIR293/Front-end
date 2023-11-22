@@ -1,0 +1,16 @@
+<div class="img">
+    <h1 class="signup">Sign Up</h1>
+  
+    <form (ngSubmit)="signup()" [formGroup]="registerForm" class="from">
+        
+        <input type="text" placeholder="Name..." formControlName="name" class="inptuuser" />
+     
+        <input type="email" placeholder="Email..." formControlName="email" class="inptuuser" />
+        
+        <input type="password" placeholder="Password..." formControlName="password" class="inptuuser" /><br> <br>
+        <button type="submit" [disabled]="registerForm.invalid" class="button1">Sign Up</button>
+    </form>
+    
+  
+    <!-- <p>Already have an account? <a [routerLink]="['/login']" >Login</a></p> -->
+  </div>

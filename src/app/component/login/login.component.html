@@ -1,0 +1,50 @@
+<div class="img">
+    
+    <h1 class="login">Login</h1>
+    
+    <form  class="from" (ngSubmit)="login()" [formGroup]="loginForm">
+      
+        <input type="email" placeholder="Email..." formControlName="email" class="inptuuser" />
+      
+        <input type="password" placeholder="Password..." formControlName="password" class="inptuuser" />
+        <br>
+        <button type="submit"  [disabled]="loginForm.invalid" class="button1">Login</button>
+          <p class="error-msg">{{externalErrorMsg}}</p>
+    </form>
+    
+
+    <p class="Register" >Don't have an account? <a [routerLink]="['/signup']" >Create new account</a></p>
+</div>
+
+
+
+<!-- <div class="img">
+
+    <div class="from" (ngSubmit)="login()" [formGroup]="loginForm" >
+      <div>
+          <form>
+              <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                  <input type="email" class="inptuuser" placeholder="Email" formControlName="email">
+                 
+                  <br>
+                  <input type="password" class="inptuuser" placeholder="Password" formControlName="password">
+                  <br>
+  
+                  <button type="submit"  [disabled]="loginForm.invalid" class="button1">Login</button>
+                  <input type="submit"  class="button1" value="Login" [disabled]="loginForm.invalid">
+               
+              </div>
+              
+          </form>
+          <p class="error-msg">{{externalErrorMsg}}</p>
+          <br>
+  
+      <p> <a [routerLink]="['/signup']" class="Doyou"> Don't have an account? Create new account</a></p>
+      
+  
+    </div>
+  </div> -->

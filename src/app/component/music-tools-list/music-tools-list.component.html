@@ -1,0 +1,31 @@
+<app-nav-bar></app-nav-bar>
+
+
+<div class="imgs">
+    <div class="bodycard">
+    <ul>
+        
+        <li *ngFor="let item of musicData" class="dataDetals">
+            <img class="imgTools" src=" /assets/media/Hidersine-Vivente-Finetune-Violin-Outfit-Full-Size-300x300.jpg"> <br> <br>
+            <p><strong>Tools Name : </strong> {{item.nameTools}}
+                <p><strong>Manufacturing Year : </strong> {{item.dataCrate}} 
+                    <p><strong>Description : </strong>{{item.describe}}<br>
+                        <button type="submit" (click)="onButtonClick()" class="button1">Request</button>
+
+                        <div *ngIf="showConfirmation" class="confirmation-message" id="confirmationMessage">
+                          <h1>{{ confirmationTitle }} {{ name }}</h1>
+                          <p>{{ confirmationText }}</p>
+                        </div>
+                       
+        </li>
+    
+    </ul>
+             </div>
+<!-- <div *ngFor="let item  of musicData " >
+
+    {{item.nameTools}}
+
+</div> -->
+
+
+</div>
