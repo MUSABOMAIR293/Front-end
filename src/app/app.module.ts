@@ -15,6 +15,8 @@ import { ReqiustComponent } from './component/reqiust/reqiust.component';
 import { NotFound404Component } from './component/not-found404/not-found404.component';
 import { ContactusComponent } from './component/contactus/contactus.component';
 import { DeletComponent } from './component/delet/delet.component';
+import { ProfileComponent } from './component/profile/profile.component';
+import { DashBordComponent } from './component/dash-bord/dash-bord.component';
 
 
 
@@ -32,6 +34,8 @@ import { DeletComponent } from './component/delet/delet.component';
     NotFound404Component,
     ContactusComponent,
     DeletComponent,
+    ProfileComponent,
+    DashBordComponent,
  
   ],
   imports: [

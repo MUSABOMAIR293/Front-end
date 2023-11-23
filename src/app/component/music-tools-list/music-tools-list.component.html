@@ -6,7 +6,7 @@
     <ul>
         
         <li *ngFor="let item of musicData" class="dataDetals">
-            <img class="imgTools" src=" /assets/media/Hidersine-Vivente-Finetune-Violin-Outfit-Full-Size-300x300.jpg"> <br> <br>
+            <img src="{{item.img}}"  class="imgda"> <br><br>
             <p><strong>Tools Name : </strong> {{item.nameTools}}
                 <p><strong>Manufacturing Year : </strong> {{item.dataCrate}} 
                     <p><strong>Description : </strong>{{item.describe}}<br>

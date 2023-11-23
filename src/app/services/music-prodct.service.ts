@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MusicProdctService {
-  readonly API_URL = 'http://localhost:8080/musicals/showAllMusical';
+  readonly API_URL = 'http://localhost:8080/musicals';
 
   constructor(
     private http: HttpClient
@@ -13,7 +13,12 @@ export class MusicProdctService {
 
 
   getMusicList(){
-    return this.http.get(this.API_URL);
+    return this.http.get(this.API_URL+'/showAllMusical');
+  }
+
+
+  deleteMusicByID(mu_id: number){
+    return this.http.delete(this.API_URL+`/delete/${mu_id}`);
   }
   
 }

@@ -1,0 +1,15 @@
+<p>dash-bord Delete and Update Item!</p>
+
+
+<div *ngFor="let item of musicData">
+<ul>
+
+    <li  *ngFor="let item of musicData">
+        <img src="{{item.img}}">
+        <p><strong>Tools Name : </strong> {{item.mu_id}}
+            <p><strong>Tools Name : </strong> {{item.nameTools}}  <br> <br>
+                <button (click)="deleteMusicByID(item.mu_id)">delete Tools</button>
+              
+    </li>
+</ul>
+</div>

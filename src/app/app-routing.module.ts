@@ -7,7 +7,8 @@ import { SignupComponent } from './component/signup/signup.component';
 import { MusicToolsListComponent } from './component/music-tools-list/music-tools-list.component';
 import { NotFound404Component } from './component/not-found404/not-found404.component';
 import { ContactusComponent } from './component/contactus/contactus.component';
-import { DeletComponent } from './component/delet/delet.component';
+import { ProfileComponent } from './component/profile/profile.component';
+import { DashBordComponent } from './component/dash-bord/dash-bord.component';
 
 
 const routes: Routes = [
@@ -35,10 +36,16 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     component:ContactusComponent
 
-  },{
-    path:'Requist',
+  },
+  {
+    path:'profile',
     canActivate: [AuthGuardService],
-    component:DeletComponent
+    component:ProfileComponent
+  },{
+    path:'DashBord',
+    canActivate: [AuthGuardService],
+    component:DashBordComponent
+
   }
   ,{
     path:'**',
